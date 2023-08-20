@@ -8,7 +8,7 @@ pub mod text_formats {
         scaled_height: u32,
         chars: &[char],
     ) -> String {
-        let mut ascii_image = String::new();
+        let mut image_text = String::new();
 
         for y in 0..scaled_height {
             for x in 0..scaled_width {
@@ -19,11 +19,11 @@ pub mod text_formats {
                 let intensity = (pixel[0] as f32 + pixel[1] as f32 + pixel[2] as f32) / 3.0;
                 let index =
                     chars.len() - 1 - (intensity / 255.0 * (chars.len() - 1) as f32) as usize;
-                ascii_image.push(' ');
-                ascii_image.push(chars[index]);
+                image_text.push(' ');
+                image_text.push(chars[index]);
             }
-            ascii_image.push('\n');
+            image_text.push('\n');
         }
-        ascii_image
+        image_text
     }
 }
