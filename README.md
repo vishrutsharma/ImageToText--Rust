@@ -9,7 +9,7 @@ This repository is a fun exploration project aimed at combining image processing
 
 ## Technologies Used
 - **Rust Programming Language**: Harnessing the power and safety of Rust for system-level programming.
-- **Image Crate**: Efficient image reading and processing.
+- **Image Crate**: Efficient image reading and processing in Rust.
 
 ## Applications
 - **Art Projects**: Create unique ASCII art from your favorite images.
